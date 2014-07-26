@@ -2724,10 +2724,11 @@ select[multiple].input-lg {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 25px;
   font-weight: normal;
   line-height: 1.42857143;
   text-align: center;
+  text-shadow: 0 -2px #222;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
@@ -2736,7 +2737,8 @@ select[multiple].input-lg {
       -ms-user-select: none;
           user-select: none;
   background-image: none;
-  border: 1px solid transparent;
+  border: 2px solid #222;
+  border-bottom:6px solid #222;
   border-radius: 4px;
 }
 .btn:focus,
@@ -2750,6 +2752,8 @@ select[multiple].input-lg {
 .btn:focus {
   color: #333;
   text-decoration: none;
+  border-bottom: 2px solid #222;
+  margin-top:4px;
 }
 .btn:active,
 .btn.active {
@@ -2813,6 +2817,11 @@ fieldset[disabled] .btn-default.active {
   color: #fff;
   background-color: #428bca;
   border-color: #357ebd;
+    
+  text-shadow: 0 -2px #285e8e;
+    
+  background: linear-gradient(to bottom, #559bd7 0%, #428bca 100%);
+  box-shadow: 0 -1px #428bca inset, 0 1px #428bca inset, 1px 0 #428bca inset, -1px 0 #428bca inset, 0 3px rgba(0, 0, 0, 0.1);
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -2854,6 +2863,11 @@ fieldset[disabled] .btn-primary.active {
   color: #fff;
   background-color: #5cb85c;
   border-color: #4cae4c;
+  text-shadow: 0 -2px #398439;
+    width:100%;
+    
+  background: linear-gradient(to bottom, #6cc16c 0%, #5cb85c 100%);
+  box-shadow: 0 -1px #6cc16c inset, 0 1px #6cc16c inset, 1px 0 #6cc16c inset, -1px 0 #6cc16c inset, 0 3px rgba(0, 0, 0, 0.1);
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -2863,6 +2877,8 @@ fieldset[disabled] .btn-primary.active {
   color: #fff;
   background-color: #449d44;
   border-color: #398439;
+    
+/*  border-top:4px solid transparent;*/
 }
 .btn-success:active,
 .btn-success.active,

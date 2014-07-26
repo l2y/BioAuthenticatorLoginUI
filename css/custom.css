@@ -1,0 +1,25 @@
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    text-align:center;
+    float:none;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.interact-box {
+    background-color:#00c8ca;
+    border-radius: 5px;
+    padding:10px;
+    box-shadow:0 3px rgba(0, 0, 0, 0.1);
+}
+
+.row-space {
+    margin-bottom:10px;
+}
+
+.button-middle {
+    
+}
