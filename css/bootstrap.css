@@ -2815,13 +2815,13 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #28abe3;
+  border-color: #198dbf;
     
-  text-shadow: 0 -2px #285e8e;
+  text-shadow: 0 -2px #167da9;
     
-  background: linear-gradient(to bottom, #559bd7 0%, #428bca 100%);
-  box-shadow: 0 -1px #428bca inset, 0 1px #428bca inset, 1px 0 #428bca inset, -1px 0 #428bca inset, 0 3px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #28abe3 0%, #55bde9 100%);
+  box-shadow: 0 -1px #55bde9 inset, 0 1px #55bde9 inset, 1px 0 #55bde9 inset, -1px 0 #55bde9 inset, 0 3px rgba(0, 0, 0, 0.1);
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -2829,8 +2829,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #3071a9;
-  border-color: #285e8e;
+  background-color: #198dbf;
+  border-color: #167da9;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -2861,13 +2861,13 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
-  text-shadow: 0 -2px #398439;
+  background-color: #1fda9a;
+  border-color: #19ad7a;
+  text-shadow: 0 -2px #15976b;
     width:100%;
     
-  background: linear-gradient(to bottom, #6cc16c 0%, #5cb85c 100%);
-  box-shadow: 0 -1px #6cc16c inset, 0 1px #6cc16c inset, 1px 0 #6cc16c inset, -1px 0 #6cc16c inset, 0 3px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #47e5af 0%, #1fda9a 100%);
+  box-shadow: 0 -1px #47e5af inset, 0 1px #47e5af inset, 1px 0 #47e5af inset, -1px 0 #47e5af inset, 0 3px rgba(0, 0, 0, 0.1);
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -2875,8 +2875,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
   color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
+  background-color: #19ad7a;
+  border-color: #15976b;
     
 /*  border-top:4px solid transparent;*/
 }
