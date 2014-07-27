@@ -2864,7 +2864,7 @@ fieldset[disabled] .btn-primary.active {
   background-color: #1fda9a;
   border-color: #19ad7a;
   text-shadow: 0 -2px #15976b;
-    width:100%;
+  width:100%;
     
   background: linear-gradient(to bottom, #47e5af 0%, #1fda9a 100%);
   box-shadow: 0 -1px #47e5af inset, 0 1px #47e5af inset, 1px 0 #47e5af inset, -1px 0 #47e5af inset, 0 3px rgba(0, 0, 0, 0.1);

@@ -22,7 +22,8 @@
   <body>
       <div class="container main-container">
         <div class="row row-centered">
-            <div class="col-md-5 col-centered interact-box" id="error">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 interact-box">
                 
                 <div class= "row">
                     <div class="col-md-12"><h1><font class="stroke" color="#ffffff"><b>AUTHENTICATION</b></font></h1></div>
@@ -36,10 +37,9 @@
                 
                 <div class="row row-space">
                     <div class="col-md-1">
-                        <button id="signup" type="button" class="btn btn-primary btn-sm" onclick="signUp()">SIGN UP</button>
+                        <button id="signup" type="button" class="btn btn-primary btn-sm" onclick="signUpToggle()">SIGN UP</button>
                     </div>
                     <div class="col-md-9">
-<!--                        <img src="css/ajax-loader.gif">-->
                     </div>
                     <div class="col-md-2" align="right">
                         <button id="help" type="button" class="btn btn-primary btn-sm " data-toggle="modal" data-target="#helpModal">?</button>
@@ -50,10 +50,9 @@
                     <div class="col-md-12">
                         <img src="css/ajax-loader.gif">
                     </div>
-                </div>
-                    
-                
+                </div>   
             </div>
+            <div class="col-md-4"></div>
         </div>
       </div>
       
@@ -90,9 +89,84 @@
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+      
+      <div class="modal fade" id="accountcreated" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                
+                <button type="button" class="close" onclick="modalClose()" >
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h3>Account Created! (Not Really Sorry)</h3>
+            </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
-    <div class="container sign-up">  
-        
+    <div class="container sign-up-container" id="signupwindow">  
+        <div class="row row-centered">
+            <div class="col-md-7 col-centered sign-up">
+                <div class= "row">
+                    <div class="col-md-4"><h1><font class="stroke" color="#ffffff"><b>SIGN UP</b></font></h1></div>
+                    <div class="col-md-8">
+                    <button type="button" class="close" onclick="signUpToggle()">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    </div>
+                </div>
+                <form class="form-horizontal" role="form" id="signupform">
+                  <div class="form-group">
+                      <div class="col-sm-1"></div>
+                    <label for="inputName" class="col-sm-2 control-label">Name</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="inputEmail3" placeholder="Name">
+                    </div>
+                      <div class="col-sm-1"></div>
+                  </div>
+                  <div class="form-group">
+                      <div class="col-sm-1"></div>
+                    <label for="inputPassword3" class="col-sm-2 control-label">Date of Birth</label>
+                    <div class="col-sm-8">
+                      <input type="date" class="form-control" id="inputPassword3" placeholder="MM/DD/YY">
+                    </div>
+                      <div class="col-sm-1"></div>
+                  </div>
+                  <div class="form-group">
+                      <div class="col-sm-1"></div>
+                    <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control" id="inputPassword3" placeholder="youremail@thatwebsite.com">
+                    </div>
+                      <div class="col-sm-1"></div>
+                  </div>
+                  <div class = "col-sm-12">
+                    <img>                      
+                  </div>
+                  <div class="form-group">
+                      <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                      <button id="recordsignal" type="button" class="btn btn-primary" onclick="record()">Record Signal</button>
+                    </div>
+                      <div class="col-sm-1"></div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <button id="createacc" type="button" class="btn btn-success" onclick="accept(); " disabled>Create Account</button>
+                    </div>
+                      <div class="form-group">
+                        <div class="col-sm-1"></div>
+                        <div class="col-md-10" id="loadinggif">
+                          <img src="css/ajax-loader.gif">
+                        </div>
+                        <div class="col-sm-1"></div>
+                      </div>
+                  </div>
+                </form>
+            </div>
+        </div>
     </div>
       
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
