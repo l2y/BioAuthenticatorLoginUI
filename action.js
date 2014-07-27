@@ -34,15 +34,30 @@ function login() {
         $('#login').button('reset');
         $('#signup').prop('disabled', false);
         $('#help').prop('disabled', false);
+        //successOpen();
+        $('#answerout').html("Welcome back, " + retAnswer()  + "!");
         $('#success').modal('show');
     }, 30000);
     
 }
 
 function retAnswer() {
+    var output;
 
-    return answer;
+    if(answer == 0) {
+        output = "Allan";
+    } else if (answer == 1) {
+        output = "Davin";
+    }
+    return output;
 
+}
+
+function successOpen() {
+    //$('#success').on('shown.bs.modal', function () {
+        //$('#answerout').html ="Welcome back, " + retAnswer()  + "!";
+        //alert('open');
+    //});
 }
 
 function signUpToggle() {
