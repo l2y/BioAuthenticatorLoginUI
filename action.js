@@ -1,4 +1,4 @@
-var answer;
+var answer = 123;
 
 function help() {
         var helpPop = document.createElement("div");
@@ -37,7 +37,7 @@ function login() {
         //successOpen();
         $('#answerout').html("Welcome back, " + retAnswer()  + "!");
         $('#success').modal('show');
-    }, 15000);
+    }, 20000);
     
 }
 
@@ -50,6 +50,8 @@ function retAnswer() {
         output = "Davin";
     } else if (answer == 2) {
         output = "Nhieu";
+    } else {
+        output = "!"
     }
     return output;
 
