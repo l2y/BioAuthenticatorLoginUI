@@ -1,6 +1,23 @@
+var answer;
+
 function help() {
         var helpPop = document.createElement("div");
         document.body.appendChild(helpPop);
+}
+
+function ieReadFile(filename) {
+     try {
+        var fso  = new ActiveXObject("Scripting.FileSystemObject");
+        var fh = fso.OpenTextFile(filename, 1);
+        var contents = fh.ReadAll();
+        fh.Close();
+        return contents;
+    }
+     catch (Exception)
+      {
+        alert(Exception);
+        return false;
+      }
 }
 
 function login() {
@@ -9,14 +26,23 @@ function login() {
     $('#signup').prop('disabled', true);
     $('#help').prop('disabled', true);
     $('#login').button('loading');
+
+    window.open('file:///C:/Users/Cain/Documents/MATLAB/opiconsole_win_v1.40_20140427/matlab/authenticate_matlab.bat');
     setTimeout(function(){
+        answer = ieReadFile('C:/Users/Cain/Documents/MATLAB/opiconsole_win_v1.40_20140427/matlab/authenticate_output.txt');
         loading.toggle();
         $('#login').button('reset');
         $('#signup').prop('disabled', false);
         $('#help').prop('disabled', false);
         $('#success').modal('show');
-    },3000);
+    }, 30000);
     
+}
+
+function retAnswer() {
+
+    return answer;
+
 }
 
 function signUpToggle() {
