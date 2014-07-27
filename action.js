@@ -37,7 +37,7 @@ function login() {
         //successOpen();
         $('#answerout').html("Welcome back, " + retAnswer()  + "!");
         $('#success').modal('show');
-    }, 30000);
+    }, 15000);
     
 }
 
@@ -48,6 +48,8 @@ function retAnswer() {
         output = "Allan";
     } else if (answer == 1) {
         output = "Davin";
+    } else if (answer == 2) {
+        output = "Nhieu";
     }
     return output;
 
